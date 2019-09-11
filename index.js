@@ -8,6 +8,7 @@ var server = http.createServer();
 var handlerequest = function(request,respone){
     var url = request.url;
    // respone.writeHead(200,{'Content-Type':'text/html'});
+   console.log('new connection');
    if(url=='/'){
        respone.writeHead(200,{'Content-Type':'text/html'});
         var ns = fs.readFile('./login.html', function(err, data) {
