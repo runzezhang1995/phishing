@@ -1,0 +1,11 @@
+{
+  "name": "phishing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev:start": "nodemon --watch src/server --exec babel-node src/server",
+    "start": "yarn run dev:start",
+    "wds": "webpack-dev-server --inline"
+  }
+}
