@@ -35,6 +35,6 @@ var handlerequest = function(request,respone){
 }
 server.on('request',handlerequest);
  
-server.listen(1551,function(){
+server.listen(80,function(){
     console.log("runing...");
 })
