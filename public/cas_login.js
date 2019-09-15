@@ -1,8 +1,41 @@
 $(document).ready(function(){
 
   // login page
-  var form = $('#fm1');
+
+  $("input[type='submit']").click(function(){
+    if(check()){
+        return true;
+    }else{
+        return false;
+        //如果不返回return是不会阻止submit的默认动作的！
+    }
+});
+
+    var check = function(){ 
+      //typeof "" ==string typeof null == object 
+      var pass = true
+      $('.errors').html("");
+
+       if(($("#username").val() == "" )||($("#username").val()== null)){
+          console.log('check');
+          $('.errors').prop("hidden",false); 
+          $('.errors').append("<p>GT Account: is required.</p>");
+          papss =  false;
+      }
+
+      if(($("#password").val() == "" )||($("#password").val()== null)){
+        console.log('check');
+        $('.errors').prop("hidden",false); 
+        $('.errors').append("<p>Password: is required.</p>");
+        pass =  false;
+      }
+      return pass;
+    }
+
+  var form = $('.gt_form');
+  
   if (form.length) {
+
     //focus username or password field, first that is empty
     var username = $('#username');
     if (username.val() == '') {
@@ -16,7 +49,8 @@ $(document).ready(function(){
     }
 
     setTimeout(function() {
-      $('body').on('submit', '#fm1', function(e) {
+      $('body').on('submit', '.gt_form', function(e) {
+        alert('here');
         e.preventDefault();
         form.find('input.btn-submit').prop('disabled', true).attr('value', 'LOGGING IN...');
         $('body').off('submit', '#fm1');

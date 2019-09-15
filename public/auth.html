@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!-- saved from url=(0172)https://api-4b6bfd4c.duosecurity.com/frame/prompt?sid=MDI0NWRhOTg0OWJmNDE0MTlkODZkMjExOWI0OTI3Nzg%3D%7C99.23.139.146%7C1568576717%7C06129419114348ccf8ca1ceab51840d143509cb4 -->
+<html lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<title>
+Two-Factor Authentication
+</title>
+<!-- Import for all versions of IE, in case the standards mode is downgraded to IE8 -->
+<!--[if IE]> <link rel="stylesheet" href="&#x2f;frame&#x2f;static&#x2f;css&#x2f;v3&#x2f;ie8.css&#x3f;v&#x3d;3582c"> <![endif]-->
+
+<link rel="stylesheet" href="./normalize.css">
+<link rel="stylesheet" href="./ss-standard.css">
+<link rel="stylesheet" href="./duo-admin.css">
+<link rel="stylesheet" href="./base.css">
+
+<link rel="stylesheet" href="./tipsy.css">
+
+<script type="text/javascript">
+    
+    var showalert = function(){
+    alert("this button is only for demonstration for this assignment. It will neither ask for your duo-factor authentication nor store your inputed password");
+    return false;
+    }
+
+    
+</script>
+</head>
+<body>
+<div class="">
+<div class="base-wrapper ">
+
+<div class="base-main">
+<div role="main" class="base-body">
+
+<form action="" method="post" id="login-form" class="inline login-form">
+<input type="hidden" name="sid" value="MDI0NWRhOTg0OWJmNDE0MTlkODZkMjExOWI0OTI3Nzg=|99.23.139.146|1568576718|3f67e6d697c2bb1ad79f5ecbacc6150755140dd6">
+<input type="hidden" name="url" value="/frame/prompt">
+<input type="hidden" name="enrollment_message" value="">
+<input type="hidden" name="itype" value="rest">
+<input type="hidden" name="ukey" value="DUAJ08MFHFZVBPGTT1I7">
+
+<input type="hidden" name="out_of_date" value="">
+<input type="hidden" name="days_out_of_date" value="">
+
+
+<input type="hidden" name="preferred_factor" value="">
+<input type="hidden" name="preferred_device" value="">
+
+<input type="hidden" name="days_to_block" value="None">
+<input type="hidden" name="should_retry_u2f_timeouts" value="False">
+<fieldset class="device-selector hidden">
+<h1 class="cramped-frame-view">
+Device:
+</h1>
+<div class="device-select-wrapper">
+<select name="device" aria-label="Device" tabindex="2">
+
+
+
+
+
+<option value="phone1">cell (XXX-XXX-1887)</option>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</select>
+
+</div>
+</fieldset>
+
+<div id="auth_methods">
+
+<fieldset data-device-index="phone1" class="">
+<h2 class="medium-or-larger">
+Choose an authentication method
+</h2>
+
+
+<div class="row-label push-label">
+<input type="hidden" name="factor" value="Duo Push">
+<span class="label factor-label">
+<i class="icon-smartphone-check"></i>
+Duo Push
+
+
+<small class="recommended">
+Recommended
+</small>
+
+
+</span>
+<button tabindex="2" class="positive auth-button" type="submit" onclick="showalert()"><!-- -->Send Me a Push </button>
+</div>
+
+
+
+
+<div class="row-label phone-label">
+<input type="hidden" name="factor" value="Phone Call">
+<span class="label factor-label">
+<i class="icon-call-ringing" alt="" role="presentation"></i>
+Call Me
+
+</span>
+<button tabindex="2" class="positive auth-button" type="submit" onclick="showalert()"><!-- -->Call Me </button>
+</div>
+
+<div class="passcode-label row-label">
+<input type="hidden" name="factor" value="Passcode">
+<span class="label factor-label">
+<i class="icon-smartphone-ellipsis" alt="" role="presentation"></i>
+Passcode
+</span>
+<input type="text" name="passcode" autocomplete="off" data-index="phone1" class="hidden passcode-input" placeholder="ex. 867539" aria-label="passcode" tabindex="2">
+<button id="passcode" tabindex="2" class="positive auth-button" type="submit" onclick="showalert()"><!-- -->Enter a Passcode </button>
+<input name="phone-smsable" type="hidden" value="False">
+<input name="mobile-otpable" type="hidden" value="True">
+<input name="next-passcode" type="hidden" value="None">
+</div>
+
+</fieldset>
+
+
+
+
+
+<input type="hidden" name="has-token" value="false">
+
+
+</div>
+
+<div>
+
+</div>
+</form>
+
+
+</div>
+</div>
+<div class="base-navigation">
+
+<div class="base-navigation">
+<div role="banner">
+
+<a href="https://api-4b6bfd4c.duosecurity.com/frame/prompt?sid=MDI0NWRhOTg0OWJmNDE0MTlkODZkMjExOWI0OTI3Nzg=|99.23.139.146|1568576718|3f67e6d697c2bb1ad79f5ecbacc6150755140dd6">
+<img src="./logo" alt="Georgia Institute of Technology Authentication" width="128">
+</a>
+
+</div>
+<div class="help-sidebar">
+<button class="btn btn-support">
+<i class="icon-align-justify" aria-label="Open"></i>
+<i class="icon-delete" aria-label="Close"></i>
+Settings
+</button>
+<div class="help-links">
+<nav role="navigation">
+
+<a id="help_link" class="help-nav" href="https://guide.duo.com/prompt" target="_blank" aria-label="What is the Duo Prompt? (Opens in a new tab.)">
+What is this?<i class="icon-new-window"></i>
+</a>
+
+
+<a href="https://api-4b6bfd4c.duosecurity.com/frame/prompt?sid=MDI0NWRhOTg0OWJmNDE0MTlkODZkMjExOWI0OTI3Nzg%3D%7C99.23.139.146%7C1568576717%7C06129419114348ccf8ca1ceab51840d143509cb4#" class="need-help">Need help?</a>
+</nav>
+
+<div role="contentinfo">
+<a href="https://duo.com/" class="branding-link" target="_blank">
+Powered by Duo Security
+</a>
+</div>
+
+
+</div>
+
+</div>
+<div class="help-overlay offscreen">
+<div class="help-links">
+<nav role="navigation">
+
+<a id="help_link" class="help-nav" href="https://guide.duo.com/prompt" target="_blank" aria-label="What is the Duo Prompt? (Opens in a new tab.)">
+What is this?<i class="icon-new-window"></i>
+</a>
+
+
+<a href="https://api-4b6bfd4c.duosecurity.com/frame/prompt?sid=MDI0NWRhOTg0OWJmNDE0MTlkODZkMjExOWI0OTI3Nzg%3D%7C99.23.139.146%7C1568576717%7C06129419114348ccf8ca1ceab51840d143509cb4#" class="need-help">Need help?</a>
+</nav>
+
+<div role="contentinfo">
+<a href="https://duo.com/" class="branding-link" target="_blank">
+Powered by Duo Security
+</a>
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="base-sidebar">
+
+</div>
+<div id="messages-view" class="hidden">
+<div class="messages-list">
+
+</div>
+</div>
+
+
+</div>
+</div>
+<script id="translations" type="text/json">
+{"locale_data": {"js-messages": {"": {"plural_forms": "nplurals&#x3d;2&#x3b; plural&#x3d;&#x28;n &#x21;&#x3d; 1&#x29;&#x3b;", "domain": "js-messages", "lang": "en"}}}, "domain": "js-messages"}
+</script>
+
+<script src="./jquery-legacy.min.js"></script>
+<script src="./he.min.js"></script>
+<script src="./jquery-postmessage.min.js"></script>
+<script src="./lodash.min.js"></script>
+<script src="./backbone-min.js"></script>
+<script src="./base.js"></script>
+<script src="./validator.min.js"></script>
+<script type="text/json" id="helpdesk-message">{"message": ""}</script>
+<script id="browser_exceptions" src="./errors.js" data-url="/frame/browser_exceptions"></script>
+<script src="./duo.js"></script>
+<!--[if lt IE 10]>
+<script src="&#x2f;frame&#x2f;static&#x2f;js&#x2f;page&#x2f;v3&#x2f;quirks.js&#x3f;v&#x3d;21bf8"></script>
+<!--<![endif]-->
+<script src="./frame.js"></script>
+
+
+<script src="./jquery.tipsy.js"></script>
+<script src="./prompt.js"></script>
+
+<script src="./public/duo.js"></script>
+
+
+
+<!--[if lt IE 9]>
+<script src="&#x2f;frame&#x2f;static&#x2f;js&#x2f;lib&#x2f;html5shiv.js&#x3f;v&#x3d;86fbf"></script>
+<![endif]-->
+
+
+</body></html>
+
+

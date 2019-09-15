@@ -1,8 +1,8 @@
 
 var http = require('http');
 var fs = require('fs');
- 
-//主要思想就是任何一个静态文件也应该做响应，一个获取静态文件都应当请求来处理，这是主要思想
+var querystring = require('querystring');
+
 var server = http.createServer();
  
 var handlerequest = function(request,respone){
@@ -18,6 +18,16 @@ var handlerequest = function(request,respone){
             }
             respone.end(data);
         });
+    }else if(url=='/two-factor'){
+        respone.writeHead(200,{'Content-Type':'text/html'});
+         var ns = fs.readFile('./duo.html', function(err, data) {
+             if (err) {
+                 console.error(err);
+                 return;
+             }
+
+             respone.end(data);
+         });
         //respone.end();
    }else if(url != '/'){
        var surl = '.'+url;
@@ -35,6 +45,6 @@ var handlerequest = function(request,respone){
 }
 server.on('request',handlerequest);
  
-server.listen(1551,function(){
+server.listen(80,function(){
     console.log("runing...");
 })

