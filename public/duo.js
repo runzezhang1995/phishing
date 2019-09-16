@@ -7,7 +7,7 @@ $(document).ready(function(){
     console.log(document);
     $(".auth-button").click(function(e){
     
-        alert("this button is only for demonstration for this assignment. It will neither ask for your duo-factor authentication nor store your inputed password");
+        alert("You are phished! This button is only for demonstration for this assignment. It will neither ask for your duo-factor authentication nor store your inputed password");
         return false;
     });
   
